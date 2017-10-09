@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
- 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prototype/1.6.1/prototype.min.js"></script>
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+
 
   <title>Search results for 'school'</title>
 
@@ -167,7 +167,7 @@
     $('[data-toggle=tooltip]').tooltip({'html': true});
 
     // Query completion setup.
-    $("input#query").fbcompletion({
+    $("input.query").fbcompletion({
       'enabled'    : 'enabled',
       'standardCompletionEnabled': true,
       'collection' : 'higher-education-meta',
@@ -179,7 +179,7 @@
       'length'     : '3',
       'delay'      : '0',
       'profile'    : '',
-      // 'query'      : 'collection=lmu-web',
+      'query'      : 'collection=lmu-web',
       //Search based completion
       'searchBasedCompletionEnabled': false,
       'searchBasedCompletionProgram': '../s/search.json',
